@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP API Tracker</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-body">
+                <h1 class="text-center font-weight-bold">IP API Tracker</h1>
+                <hr>
+                <div id="alert-info"></div>
+                <div class="form-row mb-4">
+                    <div class="col-md-9">
+                        <input id="inputIpAddress" type="text" class="form-control" placeholder="Digite o endereço IP (ex: 8.8.8.8)">
+                    </div>
+                    <div class="col-md-3">
+                        <button id="btnGetIp" class="btn btn-success w-100">Pesquisar</button>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-bordered" id="ipTable">
+                        <thead>
+                            <tr>
+                                <th>IP</th>
+                                <th>Organização</th>
+                                <th>País</th>
+                                <th>Cidade</th>
+                                <th>Região</th>
+                                <th>Localização</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody id="ipTableBody">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
