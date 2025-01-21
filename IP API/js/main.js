@@ -2,7 +2,7 @@ document.getElementById("btnGetIp").addEventListener("click", function () {
     const inputIp = document.getElementById("inputIpAddress").value.trim();
     document.getElementById("alert-info").innerHTML = "";
 
-    fetch(`https://ipinfo.io/${inputIp}/json?token=token`)
+    fetch(`https://ipinfo.io/${inputIp}/json?token=c26ad12c280a5c`)
         .then(response => response.json())
         .then(data => {
             const { ip, city = "-", country = "-", org = "-", region = "-", loc = "-" } = data;
